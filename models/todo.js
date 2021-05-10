@@ -4,12 +4,12 @@ const todoSchema = new mongoose.Schema({
         type : String,
         required : true
     },
-    phone:{
+    time:{
         type:String,
         required: true
     }
 });
 
-const todo =mongoose.model('todo',todoSchema);
+const Todo =mongoose.model('todo',todoSchema);
 
-module.exports = todo;
+module.exports = Todo;
