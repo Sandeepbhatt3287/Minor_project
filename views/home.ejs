@@ -10,5 +10,19 @@
     <h1>
         TODO list
     </h1>
+
+    <div>
+        <form action="/create-todo" method="POST">
+         <p>Description</p>   
+        <input type="text" name ="description"placeholder="What do you need to do?" required>
+        <h3>Category</h3> 
+        <input type="text" name="category"placeholder="Choose your category">
+         <H3>DATE</H3> 
+         <input type="date" name ="date">
+        
+        </form>
+    </div>
+    <button type="submit">ADD TASK</button>
+    <button type="submit">DELETE TASK</button>
 </body>
 </html>
