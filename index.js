@@ -17,13 +17,17 @@ app.use(express.static('assets'));
 
 var todoList =[
     {
-        name:"home work",
-        time:"10pm"
+    description:"home work",
+    category:"personal",    
+    date :"02/02/98"
+
     },
     {
-        name:"coding",
-        time:"12pm"
-    }
+        description:"office work",
+        category:"personal",    
+        date :"03/02/98"
+    
+        }
 ]
 
 app.get('/',function(req,res){
@@ -48,8 +52,9 @@ app.get('/practice',function(req,res){
 
 app.post('/create-todo',function(req,res){
     Todo.create({
-        name :req.body.name,
-        time: req.body.time
+        description :req.body.description,
+        category:req.body.category,
+        date: req.body.date
     },function(err,newTodo){
         if (err){console.log('error in creating a TODO list');
         
