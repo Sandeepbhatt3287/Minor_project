@@ -1,10 +1,14 @@
 const mongoose = require('mongoose');
 const todoSchema = new mongoose.Schema({
-    name :{
+    description :{
         type : String,
         required : true
     },
-    time:{
+    category:{
+        type:String,
+        required: true
+    },
+    date:{
         type:String,
         required: true
     }
