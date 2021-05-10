@@ -44,12 +44,6 @@ app.get('/',function(req,res){
     });
 });
 
-app.get('/practice',function(req,res){
-    return res.render('practice',{
-        title:"let us play with ejs"
-    });
-});
-
 app.post('/create-todo',function(req,res){
     Todo.create({
         description :req.body.description,
