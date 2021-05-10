@@ -1,7 +1,7 @@
 const express = require('express');
 // const { time } = require('node:console');
 const path = require('path');
-const port = 8000;
+const port = 7000;
 const db = require('./config/mongoose');
 const Todo = require('./models/todo');
 
@@ -27,7 +27,7 @@ var todoList =[
 ]
 
 app.get('/',function(req,res){
-    todo.find({},function(err,todos){
+    Todo.find({},function(err,todos){
         if (err){
             console.log('Error in fetcing Todo list from db');
             return;
