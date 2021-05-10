@@ -10,6 +10,9 @@ const app = express();
 app.set('view engine','ejs');
 
 app.set('views',path.join(__dirname,'views'));
+// adding middleware
+app.use(express.urlencoded()); 
+
 app.use(express.static('assets'));
 
 var todoList =[
