@@ -15,20 +15,7 @@ app.use(express.urlencoded());
 
 app.use(express.static('assets'));
 
-var todoList =[
-    {
-    description:"home work",
-    category:"personal",    
-    date :"02/02/98"
-
-    },
-    {
-        description:"office work",
-        category:"personal",    
-        date :"03/02/98"
-    
-        }
-]
+var todoList =[]
 
 app.get('/',function(req,res){
     Todo.find({},function(err,todos){

@@ -15,7 +15,17 @@
          <p>Description</p>   
         <input type="text" name ="description"placeholder="What do you need to do?" required>
         <h3>Category</h3> 
-        <input type="text" name="category"placeholder="Choose your category">
+               <select name="category" aria-placeholder="select your category">
+                <option value="personal">
+                    Personal
+                </option>
+                <option value="office">
+                    Office
+                </option>
+                <option value="college">
+                    College
+                </option>
+        </select>
          <H3>DATE</H3> 
          <input type="date" name ="date">
          <button type="submit">ADD TASK</button>
