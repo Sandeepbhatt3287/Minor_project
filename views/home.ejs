@@ -15,9 +15,12 @@
          <p>Description</p>   
         <input type="text" name ="description"placeholder="What do you need to do?" required>
         <h3>Category</h3> 
-               <select name="category" aria-placeholder="select your category">
+               <select name="category" >
+                <option >
+                    Select your category
+                </option>
                 <option value="personal">
-                    Personal
+                     Personal
                 </option>
                 <option value="office">
                     Office
@@ -33,17 +36,17 @@
         </form>
 
     </div>
-       <div>
-           <ul role="listbox" aria-checked="true">
+       <div class="todolist"> 
+           <ul type="none">
+               
                <%for(let i of todo_list){%>
                 <li>
+                    <input type="checkbox" value="/delete-todo/?id">
                     <div>
                         <p>
                             <%=i.description%>
                         </p>
-                        <p>
-                            <%=i.category%>
-                        </p>
+                        
                         <p>
                             <%=i.date%>
                         </p>
@@ -55,6 +58,11 @@
                         </button>
                         
                     </a>
+                    <button>
+                        <p>
+                            <%=i.category%>
+                        </p>
+                    </button>
                 <%}%>
            </ul>
            
