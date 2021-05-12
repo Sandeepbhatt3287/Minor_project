@@ -10,12 +10,17 @@
     <h1>
         TODO list
     </h1>
-    <div>
-        <form action="/create-todo" method="POST">
-         <p>Description</p>   
-        <input type="text" name ="description"placeholder="What do you need to do?" required>
-        <h3>Category</h3> 
-               <select name="category" >
+    <div class="form-section">
+        <form class="form" action="/create-todo" method="POST">
+         
+         <!-- Description section -->
+       <h3>Description</h3>   
+        <input type="text"  class="new description" name ="description"placeholder="What do you need to do?" required>
+        
+        <!-- Category section -->
+        <h3>Category
+
+            <select class="new category" name="category" >
                 <option >
                     Select your category
                 </option>
@@ -28,12 +33,32 @@
                 <option value="college">
                     College
                 </option>
+                <option value="college">
+                    Sports
+                </option>
+                <option value="college">
+                    School
+                </option>
         </select>
-         <H3>DATE</H3> 
-         <input type="date" name ="date">
-         <button type="submit">ADD TASK</button>
-         
-        </form>
+        </h3> 
+
+              
+
+        <!-- date section -->
+         <h3>DATE  
+            
+         </h3> 
+         <input  class="date new" type="date" name ="date" required>
+        
+    <div class="ad-btn">
+         <!-- ADD TASK button -->
+     <button class="add-btn" type="submit"> + ADD TASK</button>
+     <!-- delete button -->
+     <button class="delete-btn">DELETE TASK
+        <i class="fas fa-user-minus"></i>
+    </button>
+    </div>
+     </form>
 
     </div>
        <div class="todolist"> 
@@ -41,7 +66,7 @@
                
                <%for(let i of todo_list){%>
                 <li>
-                    <input type="checkbox" value="/delete-todo/?id">
+                    <input type="checkbox" class="input" value="/delete-todo/?id">
                     <div>
                         <p>
                             <%=i.description%>
@@ -53,7 +78,7 @@
                     </div>
                 </li>
                     <a href="/delete-todo/?id=<%= i.id%>">
-                        <button>DELETE TASK
+                        <button class="delete-btn">DELETE TASK
                             <i class="fas fa-user-minus"></i>
                         </button>
                         
