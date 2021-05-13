@@ -77,8 +77,8 @@ padding:5px ;
 
 .add-btn{
  background-color: lightgreen;
- width: auto;
- height: fit-content;
+ width: 20%;
+ height: 3%;
  border: 0;
  display: inline;
  text-align: center;
