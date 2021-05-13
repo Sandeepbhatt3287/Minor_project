@@ -54,20 +54,19 @@
          <!-- ADD TASK button -->
      <button class="add-btn" type="submit"> + ADD TASK</button>
      <!-- delete button -->
-     <button class="delete-btn">DELETE TASK
-        <i class="fas fa-user-minus"></i>
-    </button>
+     
     </div>
      </form>
 
     </div>
-       <div class="todolist"> 
-           <ul type="none">
+
+    
+       <!-- <div class="todolist">  -->
+           <ul type="none" class="todolist-ul">
                
                <%for(let i of todo_list){%>
-                <li>
-                    <input type="checkbox" class="input" value="/delete-todo/?id">
-                    <div>
+                <li class="todolist-li">
+                    <div class="todo-des">
                         <p>
                             <%=i.description%>
                         </p>
@@ -75,25 +74,33 @@
                         <p>
                             <%=i.date%>
                         </p>
+
                     </div>
-                </li>
-                    <a href="/delete-todo/?id=<%= i.id%>">
-                        <button class="delete-btn">DELETE TASK
-                            <i class="fas fa-user-minus"></i>
-                        </button>
-                        
-                    </a>
-                    <button>
+                    <button class="todo-cat">
                         <p>
                             <%=i.category%>
                         </p>
                     </button>
+
+
+                    <a href="/delete-todo/?id=<%= i.id%>">
+                        <button class="todo-del">DELETE TASK
+                            <i class="fas fa-user-minus"></i>
+                        </button>
+                    </a>
+                
+                </li>
+
+                              
+                        
+                    
+                    
+                        
                 <%}%>
-           </ul>
-           
-       </div>
+           </ul> 
+        <!-- </div>      todolist div ends  -->
     
-    
+
     
 </body>
 <script type="text/javascript" src="/js/home.js"></script>
