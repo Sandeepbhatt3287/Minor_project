@@ -24,7 +24,7 @@
                 <option >
                     Select your category
                 </option>
-                <option value="personal">
+                <option  value="personal">
                      Personal
                 </option>
                 <option value="office">
@@ -45,15 +45,12 @@
               
 
         <!-- date section -->
-         <h3>DATE  
-            
-         </h3> 
+         <h3>Date </h3> 
          <input  class="date new" type="date" name ="date" required>
         
     <div class="ad-btn">
          <!-- ADD TASK button -->
      <button class="add-btn" type="submit"> + ADD TASK</button>
-     <!-- delete button -->
      
     </div>
      </form>
@@ -83,6 +80,8 @@
                     </button>
 
 
+                    <!-- delete button -->
+
                     <a href="/delete-todo/?id=<%= i.id%>">
                         <button class="todo-del">DELETE TASK
                             <i class="fas fa-user-minus"></i>
@@ -91,12 +90,7 @@
                 
                 </li>
 
-                              
-                        
-                    
-                    
-                        
-                <%}%>
+             <%}%>
            </ul> 
         <!-- </div>      todolist div ends  -->
     

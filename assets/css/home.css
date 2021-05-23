@@ -2,13 +2,14 @@ body{
     margin :0%;
     font-family:'Times New Roman', Times, serif;
     /* background-color: rgb(40, 40, 73); */
-    background-image: url("../image/todoimage.jpeg");
+    background-image: url("../image/todoimage1.jpg");
     background-size: cover;
     
 }
 /* heading */
 h1{
     text-align: center;
+    color: white;
 }
 
 .new{
@@ -24,11 +25,16 @@ h1{
 .form-section{
     width: 50%;
     height: 50%;
-    background-color: lightslategray;
+    /* background-color: lightslategray ; */
+    background-image: url("../image/todoimage2.jpg");
+    background-size: cover;
     margin-left: 25%;
     border-radius: 30px;
 
 }
+
+
+
 /* form inside div */
 .form{
     width: 100%;
@@ -63,7 +69,6 @@ padding:5px ;
     width: 45%;
     display:flex;
     padding: 5px;
-    background-color: lightblue;
     margin-left: 30%;
 
 }
@@ -76,7 +81,7 @@ padding:5px ;
 }
 
 .add-btn{
- background-color: lightgreen;
+ background-color: rgb(9, 236, 9);
  width: 20%;
  height: 3%;
  border: 0;
@@ -85,29 +90,20 @@ padding:5px ;
  margin-left: 40%;
  margin-top: 5%;
  padding: 3%;
+ border-radius: 30px;
 }
 
 .delete-btn{
     background-color: red;
-    width: auto;
-    height: auto;
+    width: 10%;
+    height: 3%;
     display: inline-block;
     border: 0;
     margin-left: 7%;
     margin-top: 5%;
 }
 
-/* todo list section */
-/* my todo list  */
-/* .todolist{
-    height:2%;
-    width: 40%;
-    border: 10px;
-    background-color:rgb(69, 189, 230) ;
-    text-align:left;
-    margin-left: 30%;
-    margin-top: 2%;
-} */
+
 
 .todolist-ul{
     margin-left: 23%;
@@ -120,7 +116,7 @@ padding:5px ;
     display: flex;
     height: fit-content;
     /* background-image: url("../image/wip.jpg"); */
-background-color: rgb(113, 113, 243);
+background-color: blanchedalmond;
     /* background-size:contain; */
     margin-top: 5%;
     padding: 2%;
@@ -128,14 +124,7 @@ background-color: rgb(113, 113, 243);
     
 }
 
-/* input  section in todo list */
-/* .input{
-    margin-top: 20%;
-    margin-left: -10%;
-    display: inline;
-    width: 5%;
-    height: 5%;
-    } */
+
 /* description and date section */
 .todo-des{
     width: 35%;
@@ -152,7 +141,7 @@ background-color: rgb(113, 113, 243);
     margin-left: 20%;
     margin-top: 5%;
     display: inline-block;
-    background-color: rgb(9, 9, 243);
+    background-color:aquamarine;
 }
 
 /* delete button section */
@@ -161,4 +150,29 @@ background-color: rgb(113, 113, 243);
     margin-left: 55%;
     margin-top: 15%;
     background-color:red;
+}
+
+/* li child section */
+
+li:nth-child(2n){
+    background-color: blanchedalmond;
+}
+
+li:nth-child(2n+1){
+    background-color: aliceblue;
+}
+
+/* colors */
+.beige{
+    background-color: beige;
+}
+.almond{
+background-color: rgb(61, 37, 0);
+}
+
+.blue{
+    background-color: rgb(89, 89, 223);
+}
+.yellow{
+    background-color: rgb(235, 238, 76);
 }
