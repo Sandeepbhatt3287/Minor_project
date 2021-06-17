@@ -1,7 +1,7 @@
 const express = require('express');
 // const { time } = require('node:console');
 const path = require('path');
-const port = 8000;
+const port = 2000;
 const db = require('./config/mongoose');
 const Todo = require('./models/todo');
 
